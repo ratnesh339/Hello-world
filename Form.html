@@ -1,0 +1,35 @@
+<html>
+<body bgcolor="green">
+<form name="reg_form method="get">
+<fieldset><legend><b>Register Here</b></legend>
+First Name:<input type="text" id="firstname" name="firstname" maxlength="30"/><br/><br/>
+Last Name:<input type="text" id="lastname" name="lastname" maxlength="30"/><br/><br/>
+Password:<input type="password" id="password" name="password" maxlength="30"/><br/><br/>
+Choose your gender:<input type="radio" id="gender" name="gender" value="Male"/>Male
+<input type="radio" id="gender"  name="gender" value="female"/>Female<br/><br/>
+Choose your school:<input type="radio" id="class" name="class" value="school"/>School 
+<input type="radio" id="class" name="class" value="ug"/>ug
+<input type="radio" id="class" name="class" checked="checked"value="pg"/>pg<br/><br/> 
+Choose your hobbies:<input type="checkbox" id="cricket" name="cricket" value="cricket"/>Cricket
+<input type="checkbox" id="football" name="football" value="football"/>Football
+<input type="checkbox" id="chess" name="chess" value="chess"/>Chess<br/><br/>
+<input type="checkbox" id="term" name="term" value="term"/>I accept the terms and conditions of this site<br/><br/>
+Choose month:<select name="month" id="month">
+<option>Month</option><option>january</option><option>february</option><option>march</option><option>april</option><option>may</option><option>june</option><option>july</option><option>august</option><option>september</option><option>october</option><option>november</option><option>december</option></select><br/><br/>
+Choose Hobby:<select name="hobbies" id="hobbies" multiple="multiple" >
+<option>Choose hobby</option><option>chess</option><option>hockey</option><option>music</option><option>book</option></select>
+<select name="hobbies" id="hobbies"><option>choose hobby</option><optgroup label="sports"></option>cricket</option><option>football</option><option>chess</option><option>hockey</option><optgroup label="music"><option>pop</option><option>rock</option><option>hiphop</option></select><br/><br/>
+your registration code is:<input type="text" name="reg_code" value="v98A68" readonly="readonly"><br/><br/>
+Your file:<input type="text" id="file" name="file" size="30" accept="audio/">
+<input type="button" id="button" value="Browser"/>
+<input type="button" id="visit" name="visit" value="visit Google" onclick="window.open('http://www.google.com')/>
+<input type=""button" id="submit" name="submit" value="Register now"/>
+<input type="reset" id="reset" name="reset" value="clear all"/>
+<br/><br/>
+About you : <textarea rows="5" cols="50"id="about" name="about" value="write down your text here"/>
+<br/>
+<br/>
+</fieldset>
+</form>
+</body>
+</html>

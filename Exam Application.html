@@ -1,0 +1,46 @@
+<DOCTYPE! html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div#set{
+border:#000 1px solid;
+padding:10px 40px 40px 40px;
+}
+</style>
+<script>
+var pos=0,test,test_status,question,choice,choices,chA,chB,chC correct=0;
+var question=[
+["What is 10+4?","12","14","16","B"],
+["What is 20-9?","7","13","11","C"],
+["What is 7*3?","21","24","25","A"],
+["What is 8/2?","10","2","4","C"]
+];
+function_(x){
+return document.getElementById(x);}
+function renderQuestion()
+{
+test=_("test");
+_("test-status").innerHTML="Question"+(post1)+"of"+question.length;
+question=questions[pos][0];
+chA=questions[pos][1];
+chA=questions[pos][2];
+chA=questions[pos][3];
+test.innerHTML="<h3>"+question+"</h3>";
+test.innerHTML+="<input type='radio' name='choice' value='A'>"+chA+"<br>";
+test.innerHTML+="<input type='radio' name='choice' value='B'>"+chB+"<br>";
+test.innerHTML+="<input type='radio' name='choice' value='C'>"+chC+"<br>";
+test.innerHTML+=<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+function checkAnswer(){
+alert("OK we will");
+}
+window.addEventListner("load",render Question,false);
+</script>
+</head>
+<body>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+</body>
+</html>
+</script>
